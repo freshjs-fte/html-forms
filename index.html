@@ -9,16 +9,34 @@
 </head>
 <body>
     <form class="login-form" action="/" method="GET" >
+
         <label>
-            Login or email
+            Firstname
+
+            <input
+            type="text"
+            required
+            autofocus
+            >
+        </label>
+        
+        <label>
+            Lastname
+
+            <input
+            type="textasdasd"
+            required
+            >
+        </label>
+        <label>
+            Email
 
             <input
             id="login"
-            type="text"
+            type="email"
             name="login" 
             placeholder="Login"
             required
-            autofocus
             autocomplete="email"
             pattern="^([A-Za-z0-9_.]|[@]){4,32}$"
             title="Match pattern - login@mail.com"
@@ -38,6 +56,24 @@
             >
         </label>
 
+        <label>
+            <input 
+            type="radio" 
+            name="gender"
+            value="male"
+            required
+            >
+            Male
+        </label>
+
+        <label>
+            <input 
+            type="radio" 
+            name="gender" 
+            value="female"
+            >
+            Female
+        </label>
 
         <label>
             <input 
@@ -48,22 +84,9 @@
             Agree Terms of use
         </label>
 
-        <label>
-            <input 
-            type="radio" 
-            name="gender"
-            value="male"
-            >
-            Male
-        </label>
 
-        <label>
-            <input 
-            type="radio" 
-            name="gender" 
-            value="female">
-            Female
-        </label>
+<input type="number" step="5" min="0" max="50">
+<input type="range" step="5" min="0" max="50">
         
         <button>Send</button>
     </form>
