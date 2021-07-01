@@ -5,3 +5,8 @@
     max-width: 400px;
     margin: auto;
 }
+
+#login:invalid {
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
