@@ -10,51 +10,60 @@
 <body>
     <form class="login-form" action="/" method="GET" >
 
-        <label>
-            Firstname
+        <fieldset>
+            <legend>Name</legend>
+            <label>
+                Firstname
 
-            <input
-            type="text"
-            required
-            autofocus
-            >
-        </label>
-        
-        <label>
-            Lastname
+                <input
+                type="text"
+                required
+                autofocus
+                >
+            </label>
+            
+            <label>
+                Lastname
 
-            <input
-            type="textasdasd"
-            required
-            >
-        </label>
-        <label>
-            Email
+                <input
+                type="textasdasd"
+                required
+                >
+            </label>
+        </fieldset>
 
-            <input
-            id="login"
-            type="email"
-            name="login" 
-            placeholder="Login"
-            required
-            autocomplete="email"
-            pattern="^([A-Za-z0-9_.]|[@]){4,32}$"
-            title="Match pattern - login@mail.com"
-            >
-        </label>
+        <fieldset>
+            <legend>Auth data</legend>
 
-        <label>
-            Password
-            <input
-            id="password" 
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            autocomplete="current-password"
-            pattern="^[A-Za-z0-9_.]{7,16}$"
-            >
-        </label>
+            <label>
+                
+                Email
+
+                <input
+                id="login"
+                type="email"
+                name="login" 
+                placeholder="Login"
+                required
+                autocomplete="email"
+                pattern="^([A-Za-z0-9_.]|[@]){4,32}$"
+                title="Match pattern - login@mail.com"
+                >
+            </label>
+
+            <label>
+                Password
+                <input
+                id="password" 
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                autocomplete="current-password"
+                pattern="^[A-Za-z0-9_.]{7,16}$"
+                >
+            </label>
+        </fieldset>
 
         <label>
             <input 
@@ -63,6 +72,7 @@
             value="male"
             required
             >
+            <!-- gender=male -->
             Male
         </label>
 
@@ -72,8 +82,15 @@
             name="gender" 
             value="female"
             >
+            <!-- gender=female -->
             Female
         </label>
+
+        <select name="select" >
+            <option value="NewYork">Киев</option>
+            <option value="value2" selected>Значение 2</option>
+            <option value="value3">Значение 3</option>
+          </select>
 
         <label>
             <input 
@@ -84,37 +101,12 @@
             Agree Terms of use
         </label>
 
-
-        <input type="number" step="5" min="0" max="50">
-        <input type="range" step="5" min="0" max="50">
-                
-        <input type="color" name="color">
-
-        <input type="date" name="date">
-        <input type="datetime-local" name="date-l">
-
-        <input type="time">
-
-        <input type="month">
-
-        <input type="week">
-
-
-        <input type="text" hidden>
-
-        <input type="hidden" name="ua" value="chrome">
-
         <button class="form-btn">
             Send
 
             <svg width="24" height="24" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" /></svg>
         </button>
         <!-- <input type="image"> -->
-
-        
-        <input type="file">
-
-        <input type="tel">
 
         <input 
         type="reset" 
