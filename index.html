@@ -13,11 +13,15 @@
             Login or email
 
             <input
-            type="text" 
+            id="login"
+            type="text"
             name="login" 
             placeholder="Login"
             required
             autofocus
+            autocomplete="email"
+            pattern="^([A-Za-z0-9_.]|[@]){4,32}$"
+            title="Match pattern - login@mail.com"
             >
         </label>
 
@@ -29,7 +33,36 @@
             name="password"
             placeholder="Password"
             required
+            autocomplete="current-password"
+            pattern="^[A-Za-z0-9_.]{7,16}$"
             >
+        </label>
+
+
+        <label>
+            <input 
+            type="checkbox" 
+            required
+            name="terms"
+            >
+            Agree Terms of use
+        </label>
+
+        <label>
+            <input 
+            type="radio" 
+            name="gender"
+            value="male"
+            >
+            Male
+        </label>
+
+        <label>
+            <input 
+            type="radio" 
+            name="gender" 
+            value="female">
+            Female
         </label>
         
         <button>Send</button>
